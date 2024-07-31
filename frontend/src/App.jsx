@@ -230,11 +230,11 @@ export default function App() {
             })
             .then((response) => {
                 console.log(response.status);
-                return response.text();
+                return response.json();
             })
-            .then((text) => {
+            .then((json) => {
                 console.log("SUCCESS");
-                console.log(text);
+                console.log(json);
             })
             .catch((err) => {
                 console.log("ERROR");
@@ -259,10 +259,10 @@ export default function App() {
         })
         .then((response) => {
             console.log(response.status);
-            return response.text();
+            return response.json();
         })
-        .then((text) => {
-            console.log(text);
+        .then((json) => {
+            console.log(json);
         }).catch((err) => {
             console.log("ERROR");
             console.log(err);
@@ -292,9 +292,9 @@ export default function App() {
             credentials: "include",
         }).then((response) => {
             console.log(response.status);
-            return response.text();
-        }).then((text) => {
-            console.log(text);
+            return response.json();
+        }).then((json) => {
+            console.log(json);
         });
     }
 
