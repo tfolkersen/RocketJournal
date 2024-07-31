@@ -1,0 +1,263 @@
+.starsBackground {
+    position: fixed;
+    display: inline-block;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 4%);
+    filter: blur(2px);
+
+    z-index: -9000;
+}
+
+@keyframes starsAnim {
+    0% {
+        transform: translate(0, 0%);
+    }
+
+    100% {
+        transform: translate(0, -100vh);
+    }
+}
+
+.starsAnim1 {
+    animation: starsAnim 50s linear infinite reverse;
+}
+
+.starsAnim2 {
+    animation: starsAnim 70s linear infinite reverse;
+}
+
+.starsAnim3 {
+    animation: starsAnim 90s linear infinite reverse;
+}
+
+.stars1 {
+position: absolute;
+display: inline-block;
+top: 0;
+left: -0.5vmin;
+width: 0.5vmin;
+height: 0.5vmin;
+box-shadow: 36.64vw 52.33vh #a58fff, 36.64vw 152.33vh #a58fff,
+	67.58vw 12.49vh #a58fff, 67.58vw 112.49vh #a58fff,
+	11.14vw 23.55vh #a58fff, 11.14vw 123.55vh #a58fff,
+	100.23vw 11.95vh #a58fff, 100.23vw 111.95vh #a58fff,
+	89.04vw 40.39vh #a58fff, 89.04vw 140.39vh #a58fff,
+	63.82vw 2.70vh #a58fff, 63.82vw 102.70vh #a58fff,
+	12.18vw 67.72vh #a58fff, 12.18vw 167.72vh #a58fff,
+	93.75vw 11.50vh #a58fff, 93.75vw 111.50vh #a58fff,
+	75.92vw 42.55vh #a58fff, 75.92vw 142.55vh #a58fff,
+	95.88vw 83.13vh #a58fff, 95.88vw 183.13vh #a58fff,
+	94.37vw 17.60vh #a58fff, 94.37vw 117.60vh #a58fff,
+	47.27vw 96.50vh #a58fff, 47.27vw 196.50vh #a58fff,
+	87.27vw 81.09vh #a58fff, 87.27vw 181.09vh #a58fff,
+	11.90vw 35.23vh #a58fff, 11.90vw 135.23vh #a58fff,
+	58.96vw 11.40vh #a58fff, 58.96vw 111.40vh #a58fff,
+	42.50vw 73.50vh #a58fff, 42.50vw 173.50vh #a58fff,
+	62.89vw 66.73vh #a58fff, 62.89vw 166.73vh #a58fff,
+	54.52vw 91.94vh #a58fff, 54.52vw 191.94vh #a58fff,
+	43.59vw 44.11vh #a58fff, 43.59vw 144.11vh #a58fff,
+	54.93vw 8.29vh #a58fff, 54.93vw 108.29vh #a58fff,
+	58.71vw 1.46vh #a58fff, 58.71vw 101.46vh #a58fff,
+	13.44vw 99.01vh #a58fff, 13.44vw 199.01vh #a58fff,
+	20.20vw 8.62vh #a58fff, 20.20vw 108.62vh #a58fff,
+	76.75vw 66.30vh #a58fff, 76.75vw 166.30vh #a58fff,
+	100.36vw 31.50vh #a58fff, 100.36vw 131.50vh #a58fff,
+	29.68vw 58.15vh #a58fff, 29.68vw 158.15vh #a58fff,
+	44.92vw 8.36vh #a58fff, 44.92vw 108.36vh #a58fff,
+	70.35vw 8.20vh #a58fff, 70.35vw 108.20vh #a58fff,
+	8.12vw 41.55vh #a58fff, 8.12vw 141.55vh #a58fff,
+	72.95vw 76.45vh #a58fff, 72.95vw 176.45vh #a58fff,
+	0.64vw 13.51vh #a58fff, 0.64vw 113.51vh #a58fff,
+	43.93vw 24.39vh #a58fff, 43.93vw 124.39vh #a58fff,
+	54.84vw 65.51vh #a58fff, 54.84vw 165.51vh #a58fff,
+	74.48vw 34.70vh #a58fff, 74.48vw 134.70vh #a58fff,
+	31.42vw 35.43vh #a58fff, 31.42vw 135.43vh #a58fff,
+	89.46vw 55.48vh #a58fff, 89.46vw 155.48vh #a58fff,
+	56.41vw 23.21vh #a58fff, 56.41vw 123.21vh #a58fff,
+	36.96vw 41.40vh #a58fff, 36.96vw 141.40vh #a58fff,
+	9.46vw 63.05vh #a58fff, 9.46vw 163.05vh #a58fff,
+	51.45vw 62.37vh #a58fff, 51.45vw 162.37vh #a58fff,
+	15.56vw 31.67vh #a58fff, 15.56vw 131.67vh #a58fff,
+	86.93vw 16.58vh #a58fff, 86.93vw 116.58vh #a58fff,
+	78.68vw 51.77vh #a58fff, 78.68vw 151.77vh #a58fff,
+	22.91vw 34.64vh #a58fff, 22.91vw 134.64vh #a58fff,
+	98.39vw 18.39vh #a58fff, 98.39vw 118.39vh #a58fff,
+	31.94vw 88.35vh #a58fff, 31.94vw 188.35vh #a58fff,
+	58.90vw 3.66vh #a58fff, 58.90vw 103.66vh #a58fff,
+	56.65vw 56.67vh #a58fff, 56.65vw 156.67vh #a58fff,
+	1.22vw 56.14vh #a58fff, 1.22vw 156.14vh #a58fff,
+	82.02vw 13.08vh #a58fff, 82.02vw 113.08vh #a58fff;
+}
+.stars2 {
+position: absolute;
+display: inline-block;
+top: 0;
+left: -0.3vmin;
+width: 0.3vmin;
+height: 0.3vmin;
+box-shadow: 87.86vw 72.13vh #a58fff, 87.86vw 172.13vh #a58fff,
+	71.10vw 52.52vh #a58fff, 71.10vw 152.52vh #a58fff,
+	66.95vw 69.59vh #a58fff, 66.95vw 169.59vh #a58fff,
+	15.87vw 44.50vh #a58fff, 15.87vw 144.50vh #a58fff,
+	1.64vw 44.75vh #a58fff, 1.64vw 144.75vh #a58fff,
+	40.04vw 62.75vh #a58fff, 40.04vw 162.75vh #a58fff,
+	85.80vw 35.54vh #a58fff, 85.80vw 135.54vh #a58fff,
+	10.70vw 8.27vh #a58fff, 10.70vw 108.27vh #a58fff,
+	7.61vw 75.34vh #a58fff, 7.61vw 175.34vh #a58fff,
+	9.19vw 61.62vh #a58fff, 9.19vw 161.62vh #a58fff,
+	59.87vw 51.12vh #a58fff, 59.87vw 151.12vh #a58fff,
+	15.56vw 97.05vh #a58fff, 15.56vw 197.05vh #a58fff,
+	66.08vw 64.64vh #a58fff, 66.08vw 164.64vh #a58fff,
+	11.13vw 37.71vh #a58fff, 11.13vw 137.71vh #a58fff,
+	21.65vw 87.47vh #a58fff, 21.65vw 187.47vh #a58fff,
+	17.16vw 86.76vh #a58fff, 17.16vw 186.76vh #a58fff,
+	83.77vw 91.82vh #a58fff, 83.77vw 191.82vh #a58fff,
+	27.90vw 99.20vh #a58fff, 27.90vw 199.20vh #a58fff,
+	49.66vw 83.42vh #a58fff, 49.66vw 183.42vh #a58fff,
+	25.63vw 34.65vh #a58fff, 25.63vw 134.65vh #a58fff,
+	92.20vw 99.79vh #a58fff, 92.20vw 199.79vh #a58fff,
+	57.68vw 18.28vh #a58fff, 57.68vw 118.28vh #a58fff,
+	21.43vw 21.83vh #a58fff, 21.43vw 121.83vh #a58fff,
+	53.56vw 1.34vh #a58fff, 53.56vw 101.34vh #a58fff,
+	17.20vw 96.01vh #a58fff, 17.20vw 196.01vh #a58fff,
+	11.94vw 91.84vh #a58fff, 11.94vw 191.84vh #a58fff,
+	8.49vw 71.05vh #a58fff, 8.49vw 171.05vh #a58fff,
+	79.30vw 7.14vh #a58fff, 79.30vw 107.14vh #a58fff,
+	17.84vw 30.96vh #a58fff, 17.84vw 130.96vh #a58fff,
+	98.69vw 61.12vh #a58fff, 98.69vw 161.12vh #a58fff,
+	35.99vw 77.30vh #a58fff, 35.99vw 177.30vh #a58fff,
+	15.48vw 13.03vh #a58fff, 15.48vw 113.03vh #a58fff,
+	51.46vw 87.21vh #a58fff, 51.46vw 187.21vh #a58fff,
+	77.38vw 60.20vh #a58fff, 77.38vw 160.20vh #a58fff,
+	64.03vw 9.29vh #a58fff, 64.03vw 109.29vh #a58fff,
+	56.90vw 28.42vh #a58fff, 56.90vw 128.42vh #a58fff,
+	2.18vw 10.70vh #a58fff, 2.18vw 110.70vh #a58fff,
+	99.55vw 19.34vh #a58fff, 99.55vw 119.34vh #a58fff,
+	68.95vw 73.90vh #a58fff, 68.95vw 173.90vh #a58fff,
+	7.92vw 42.81vh #a58fff, 7.92vw 142.81vh #a58fff,
+	64.14vw 82.53vh #a58fff, 64.14vw 182.53vh #a58fff,
+	68.46vw 87.55vh #a58fff, 68.46vw 187.55vh #a58fff,
+	43.54vw 36.78vh #a58fff, 43.54vw 136.78vh #a58fff,
+	53.78vw 54.10vh #a58fff, 53.78vw 154.10vh #a58fff,
+	21.05vw 35.14vh #a58fff, 21.05vw 135.14vh #a58fff,
+	40.52vw 7.74vh #a58fff, 40.52vw 107.74vh #a58fff,
+	15.08vw 76.10vh #a58fff, 15.08vw 176.10vh #a58fff,
+	21.55vw 91.46vh #a58fff, 21.55vw 191.46vh #a58fff,
+	72.21vw 13.04vh #a58fff, 72.21vw 113.04vh #a58fff,
+	21.97vw 34.39vh #a58fff, 21.97vw 134.39vh #a58fff;
+}
+.stars3 {
+position: absolute;
+display: inline-block;
+top: 0;
+left: -0.2vmin;
+width: 0.2vmin;
+height: 0.2vmin;
+box-shadow: 60.23vw 3.57vh #a58fff, 60.23vw 103.57vh #a58fff,
+	78.36vw 45.34vh #a58fff, 78.36vw 145.34vh #a58fff,
+	42.65vw 82.41vh #a58fff, 42.65vw 182.41vh #a58fff,
+	71.21vw 25.41vh #a58fff, 71.21vw 125.41vh #a58fff,
+	46.67vw 79.04vh #a58fff, 46.67vw 179.04vh #a58fff,
+	51.63vw 6.58vh #a58fff, 51.63vw 106.58vh #a58fff,
+	71.45vw 1.94vh #a58fff, 71.45vw 101.94vh #a58fff,
+	26.80vw 34.96vh #a58fff, 26.80vw 134.96vh #a58fff,
+	0.83vw 91.47vh #a58fff, 0.83vw 191.47vh #a58fff,
+	43.42vw 81.47vh #a58fff, 43.42vw 181.47vh #a58fff,
+	26.91vw 22.45vh #a58fff, 26.91vw 122.45vh #a58fff,
+	0.84vw 13.27vh #a58fff, 0.84vw 113.27vh #a58fff,
+	71.96vw 91.21vh #a58fff, 71.96vw 191.21vh #a58fff,
+	78.87vw 51.86vh #a58fff, 78.87vw 151.86vh #a58fff,
+	3.71vw 50.07vh #a58fff, 3.71vw 150.07vh #a58fff,
+	89.84vw 91.86vh #a58fff, 89.84vw 191.86vh #a58fff,
+	60.73vw 3.04vh #a58fff, 60.73vw 103.04vh #a58fff,
+	94.96vw 39.11vh #a58fff, 94.96vw 139.11vh #a58fff,
+	60.55vw 94.66vh #a58fff, 60.55vw 194.66vh #a58fff,
+	49.55vw 80.77vh #a58fff, 49.55vw 180.77vh #a58fff,
+	74.77vw 98.92vh #a58fff, 74.77vw 198.92vh #a58fff,
+	30.08vw 29.21vh #a58fff, 30.08vw 129.21vh #a58fff,
+	3.95vw 80.76vh #a58fff, 3.95vw 180.76vh #a58fff,
+	14.97vw 94.39vh #a58fff, 14.97vw 194.39vh #a58fff,
+	71.94vw 45.37vh #a58fff, 71.94vw 145.37vh #a58fff,
+	65.10vw 11.36vh #a58fff, 65.10vw 111.36vh #a58fff,
+	71.93vw 29.63vh #a58fff, 71.93vw 129.63vh #a58fff,
+	73.32vw 49.86vh #a58fff, 73.32vw 149.86vh #a58fff,
+	67.68vw 65.97vh #a58fff, 67.68vw 165.97vh #a58fff,
+	37.65vw 22.29vh #a58fff, 37.65vw 122.29vh #a58fff,
+	9.07vw 51.47vh #a58fff, 9.07vw 151.47vh #a58fff,
+	7.47vw 22.02vh #a58fff, 7.47vw 122.02vh #a58fff,
+	48.41vw 38.23vh #a58fff, 48.41vw 138.23vh #a58fff,
+	88.45vw 78.99vh #a58fff, 88.45vw 178.99vh #a58fff,
+	10.94vw 50.53vh #a58fff, 10.94vw 150.53vh #a58fff,
+	85.79vw 9.54vh #a58fff, 85.79vw 109.54vh #a58fff,
+	45.58vw 47.74vh #a58fff, 45.58vw 147.74vh #a58fff,
+	52.14vw 79.55vh #a58fff, 52.14vw 179.55vh #a58fff,
+	4.42vw 62.00vh #a58fff, 4.42vw 162.00vh #a58fff,
+	64.93vw 20.12vh #a58fff, 64.93vw 120.12vh #a58fff,
+	16.33vw 67.92vh #a58fff, 16.33vw 167.92vh #a58fff,
+	89.28vw 53.17vh #a58fff, 89.28vw 153.17vh #a58fff,
+	69.87vw 54.30vh #a58fff, 69.87vw 154.30vh #a58fff,
+	48.90vw 73.69vh #a58fff, 48.90vw 173.69vh #a58fff,
+	28.98vw 65.58vh #a58fff, 28.98vw 165.58vh #a58fff,
+	17.81vw 78.76vh #a58fff, 17.81vw 178.76vh #a58fff,
+	99.10vw 15.43vh #a58fff, 99.10vw 115.43vh #a58fff,
+	5.08vw 54.10vh #a58fff, 5.08vw 154.10vh #a58fff,
+	5.62vw 55.88vh #a58fff, 5.62vw 155.88vh #a58fff,
+	50.12vw 7.22vh #a58fff, 50.12vw 107.22vh #a58fff,
+	77.72vw 35.40vh #a58fff, 77.72vw 135.40vh #a58fff,
+	78.22vw 94.30vh #a58fff, 78.22vw 194.30vh #a58fff,
+	89.70vw 14.35vh #a58fff, 89.70vw 114.35vh #a58fff,
+	50.69vw 79.42vh #a58fff, 50.69vw 179.42vh #a58fff,
+	38.06vw 5.89vh #a58fff, 38.06vw 105.89vh #a58fff,
+	87.95vw 81.69vh #a58fff, 87.95vw 181.69vh #a58fff,
+	14.77vw 68.28vh #a58fff, 14.77vw 168.28vh #a58fff,
+	98.55vw 2.46vh #a58fff, 98.55vw 102.46vh #a58fff,
+	48.92vw 79.79vh #a58fff, 48.92vw 179.79vh #a58fff,
+	76.12vw 56.19vh #a58fff, 76.12vw 156.19vh #a58fff,
+	72.44vw 1.58vh #a58fff, 72.44vw 101.58vh #a58fff,
+	93.78vw 98.25vh #a58fff, 93.78vw 198.25vh #a58fff,
+	78.89vw 64.30vh #a58fff, 78.89vw 164.30vh #a58fff,
+	5.05vw 19.37vh #a58fff, 5.05vw 119.37vh #a58fff,
+	12.99vw 95.19vh #a58fff, 12.99vw 195.19vh #a58fff,
+	78.58vw 3.63vh #a58fff, 78.58vw 103.63vh #a58fff,
+	69.77vw 8.82vh #a58fff, 69.77vw 108.82vh #a58fff,
+	29.95vw 21.42vh #a58fff, 29.95vw 121.42vh #a58fff,
+	62.18vw 36.10vh #a58fff, 62.18vw 136.10vh #a58fff,
+	44.34vw 30.94vh #a58fff, 44.34vw 130.94vh #a58fff,
+	69.32vw 16.39vh #a58fff, 69.32vw 116.39vh #a58fff,
+	4.55vw 57.91vh #a58fff, 4.55vw 157.91vh #a58fff,
+	91.13vw 55.11vh #a58fff, 91.13vw 155.11vh #a58fff,
+	88.91vw 62.15vh #a58fff, 88.91vw 162.15vh #a58fff,
+	35.12vw 35.65vh #a58fff, 35.12vw 135.65vh #a58fff,
+	27.71vw 84.58vh #a58fff, 27.71vw 184.58vh #a58fff,
+	34.78vw 55.43vh #a58fff, 34.78vw 155.43vh #a58fff,
+	81.12vw 37.02vh #a58fff, 81.12vw 137.02vh #a58fff,
+	29.75vw 95.12vh #a58fff, 29.75vw 195.12vh #a58fff,
+	68.90vw 83.34vh #a58fff, 68.90vw 183.34vh #a58fff,
+	77.68vw 48.44vh #a58fff, 77.68vw 148.44vh #a58fff,
+	75.43vw 55.70vh #a58fff, 75.43vw 155.70vh #a58fff,
+	10.06vw 61.96vh #a58fff, 10.06vw 161.96vh #a58fff,
+	80.62vw 98.81vh #a58fff, 80.62vw 198.81vh #a58fff,
+	20.89vw 84.23vh #a58fff, 20.89vw 184.23vh #a58fff,
+	49.68vw 96.76vh #a58fff, 49.68vw 196.76vh #a58fff,
+	58.68vw 36.19vh #a58fff, 58.68vw 136.19vh #a58fff,
+	41.68vw 16.81vh #a58fff, 41.68vw 116.81vh #a58fff,
+	52.56vw 64.11vh #a58fff, 52.56vw 164.11vh #a58fff,
+	18.47vw 9.79vh #a58fff, 18.47vw 109.79vh #a58fff,
+	73.83vw 67.19vh #a58fff, 73.83vw 167.19vh #a58fff,
+	10.25vw 23.70vh #a58fff, 10.25vw 123.70vh #a58fff,
+	38.15vw 75.21vh #a58fff, 38.15vw 175.21vh #a58fff,
+	39.83vw 77.64vh #a58fff, 39.83vw 177.64vh #a58fff,
+	5.22vw 54.87vh #a58fff, 5.22vw 154.87vh #a58fff,
+	23.70vw 15.70vh #a58fff, 23.70vw 115.70vh #a58fff,
+	99.95vw 29.48vh #a58fff, 99.95vw 129.48vh #a58fff,
+	55.30vw 20.24vh #a58fff, 55.30vw 120.24vh #a58fff,
+	86.61vw 86.26vh #a58fff, 86.61vw 186.26vh #a58fff,
+	30.54vw 99.18vh #a58fff, 30.54vw 199.18vh #a58fff;
+}

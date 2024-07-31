@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    color: white;
+}
+
+body {
+    min-height: 200vh;
+    background-color: black;
+}
+
+/*** BANNER STUFF ***/
+
+.bannerDiv {
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.bannerTitle {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    margin-top: 0.2em;
+
+    font-family: Zain, "Noto Color Emoji";
+    font-size: 5em;
+    line-height: 1.2em;
+
+    color: white;
+    text-shadow: 2px 2px #6040ff;
+}
+
+.bannerSubtitle {
+    display: block;
+
+    font-family: Roboto;
+    font-size: 1em;
+
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.logo {
+    position: absolute;
+    transform: translate(-100%, 7%);
+}
+
+/*** CONTENT STUFF ***/
+
+.mainTable {
+    display: table;
+    width: 100%;
+    height: 60vh;
+}
+
+.mainTableCell {
+    display: table-cell;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*** LOGIN BUBBLE STUFF ***/
+
+
+.loginBubble {
+    --bubble-padding: 2em;
+    --bubble-padding-top: 0.2em;
+
+    display: inline-block;
+
+    padding:
+        var(--bubble-padding-top)
+        var(--bubble-padding)
+        var(--bubble-padding)
+        var(--bubble-padding);
+
+    border: 2px solid white;
+    border-radius: 8px;
+
+    font-family: Roboto;
+    text-shadow: 1px 1px black;
+    text-align: left;
+
+    background-color: #4020ff;
+
+    box-shadow: 1px 1px 1px #808080;
+
+
+    --button-height: 1.4em;
+    --label-height: 1.4em;
+    --label-margin-bottom: 0.1em;
+    --textInputDiv-margin-bottom: 0.3em;
+    --p-height: 1.3em;
+
+    --textInputInput-height: 1.4em;
+}
+
+.loginBubble p {
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    font-family: inherit;
+    height: var(--p-height);
+}
+
+.textInputDiv {
+    font-family: inherit;
+    display: block; 
+    width: 100%;
+    margin-bottom: var(--textInputDiv-margin-bottom);
+}
+
+
+.textInputLabel {
+    font-family: inherit;
+    display: block;
+    cursor: text;
+    font-size: 1em;
+
+    height: var(--label-height);
+    margin-bottom: var(--label-margin-bottom);
+}
+
+.textInputInput {
+    font-family: inherit;
+    display: block;
+    color: black;
+    padding: 0.3em 0.3em;
+    box-shadow: 1px 1px 1px black;
+    font-size: 1em;
+    border: 1px solid #8f8f9d;
+    border-radius: 3px;
+    height: var(--textInputInput-height);
+}
+
+.loginButton {
+    font-family: inherit;
+    color: black;
+    display: block;
+    width: 100%;
+    border: 0px;
+    border-radius: 20px;
+    text-align: center;
+    height: var(--button-height);
+    font-size: 1em;
+    padding: 0.3em 0;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background-color: var(--hover-color);
+}
+
+
+.loginButton:active {
+    background-color: var(--active-color);
+}
+
+/*
+    Default button colors:
+    #e9e9ed
+    HSV 240deg 2% 93%
+    #d0d0d7
+    HSV 240deg 3% 84%
+    #b1b1b9
+    240deg 4% 73%
+    
+*/
+
+.button-white {
+    background-color: #e9e9ed;
+    --hover-color: #d0d0d7;
+    --active-color: #b1b1b9;
+}
+
+.button-lblue {
+    background-color: #42fcda;
+    --hover-color: #38d9bb;
+    --active-color: #32bfa5;
+}
+
+
+.loginSpacer0 {
+    width: 100%;
+    height: 1.5em;
+}
+
+/* Between button and text input */
+.loginSpacer1 {
+    width: 100%;
+    height: calc((0.3em + 1em + 0.1em));
+}
+
+/* Between login button and "need account" text*/
+.spacer-sectionSeparator {
+    width: 100%;
+    height: calc(
+        2 *
+        var(--button-height)
+    );
+}
+
+/* Between "need account" text and create account button */
+.spacer-pButton {
+    width: 100%;
+    height: 0.1em;
+}
+
+.spacer-labelSize {
+    width: 100%;
+    height: calc(
+        var(--label-height) +
+        var(--label-margin-bottom)
+    );
+}
+
+
+.spacer-pTop {
+    width: 100%;
+    height: calc(
+        var(--bubble-padding) -
+        var(--p-height) -
+        var(--bubble-padding-top)
+    );
+}
+
+.loginBubbleTopText {
+    display: block;
+    margin-bottom: 0.4em;
+}
+
+
+.hideDiv {
+    visibility: hidden;
+    display: inline-block;
+}
+
+.pWarning {
+    color: #ff2020;
+}

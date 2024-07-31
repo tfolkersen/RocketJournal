@@ -1,0 +1,39 @@
+-------------------- Conceptual Objects --------------------
+Pin
+    -- userID   <-- unique user ID of owner
+    -- page     <-- i.e. "2024-July-14", "2024-July-W3", "2024-July"
+    -- message  <-- the contents of the pin (text with some max size)
+
+Task
+    -- userID   (Same as pin)
+    -- page     (Same as pin)
+    -- title    <-- title of the task shown on a page
+    -- message  (same as pin)
+    -- status   <-- i.e. "incomplete", "complete", "cancelled"
+
+Event
+    -- userID   (same as task)
+                <-- no "page" (events exist in time, not on a page)
+    -- time     <-- Actual datetime (store in some universal format)
+    -- title    (same as task)
+    -- message  (same as task)
+    -- status   (same as task)
+
+User
+    -- userName
+    -- passwordHash
+    -- userID
+
+Preferences
+    -- userID
+    -- showTasksIncomplete
+    -- showTasksCancelled
+    -- sortEvents
+    -- sortTasks
+    ...
+
+
+
+
+
+-------------------- DB Tables --------------------
