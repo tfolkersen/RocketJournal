@@ -37,3 +37,7 @@ Preferences
 
 
 -------------------- DB Tables --------------------
+users, preferences
+pin, task, event
+
+
